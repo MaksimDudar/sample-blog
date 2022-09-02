@@ -3,8 +3,15 @@
 <hr />
 
 <% @articles.each do |article| %>
+<h3>
+  <%= article.title %>
+</h3>
 <p>
-  <a href="/articles/<%= article.id %>"><%= article.title %></a>
+  <%= article.text %>
+</p>
+ <p>
+  <%= link_to 'Show', article_path(article) %>
+
   </p>
   <hr />
  <% end %>
