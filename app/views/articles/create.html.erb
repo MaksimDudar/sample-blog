@@ -1,9 +1,0 @@
-<h1>Thank you</h1>
-<p>Article has been created</p>
-<% @articles.each do |article| %>
-<p>
-  <a href="/articles/<%= article.id %>"><%= article.title %></a>
-  </p>
- <% end %>
-<!-- <a href="/articles">Show all articles</a> -->
-<%= link_to 'Show all articles!', articles_path %>
