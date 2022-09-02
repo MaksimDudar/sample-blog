@@ -1,4 +1,10 @@
 class ArticlesController < ApplicationController
+
+  def index
+      @articles = Article.all
+    	
+  end
+
   def show
     @article = Article.find(params[:id])
   end
@@ -6,14 +12,7 @@ class ArticlesController < ApplicationController
   def new
   end
 
-  def index
-      @articles = Article.all
-    	@article = Article.find(1)
-  end
-
   def create
-    @articles = Article.all
-    @article = Article.find(1)
     @article = Article.new(article_params)
     if @article.valid?
       @article.save

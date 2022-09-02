@@ -1,8 +1,11 @@
-<h1>ARTICLES!!!</h1>
+<h1>List of articlse</h1>
+<hr />
+<hr />
+
 <% @articles.each do |article| %>
 <p>
   <a href="/articles/<%= article.id %>"><%= article.title %></a>
   </p>
+  <hr />
  <% end %>
  <!-- <a href="/articles">Show all articles</a> -->
-<%= link_to 'Show all articles!', articles_path %>
