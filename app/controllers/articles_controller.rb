@@ -13,7 +13,7 @@ class ArticlesController < ApplicationController
     if @article.valid?
       @article.save
     else
-      render action: 'index'
+      render action: 'new'
     end
   end
 
