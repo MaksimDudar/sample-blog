@@ -4,6 +4,11 @@
 <p>
   <%= @article.text %>
 </p>
+<h3>All comments</h3>
+<% @article.comments.each do |comment| %>
+  <p><%= comment.author %>:
+    <%= comment.body %></p>
+    <% end %>
 <p>
   <%= form_for([@article, @article.comments.build]) do |f| %>
     <p>
