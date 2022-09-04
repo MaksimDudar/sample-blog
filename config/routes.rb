@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'information' => 'pages#information'
   resource :contacts, only: [:new, :create], path_names: {:new => ''}
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
+  
   resource :terms
   resource :abouts
 
