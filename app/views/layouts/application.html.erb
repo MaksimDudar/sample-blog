@@ -9,11 +9,10 @@
   </head>
 
   <body>
-
-<p><%= button_to "Sign in", user_session_path, method: :post  %></p>
-<p> <%= button_to "Sign out", destroy_user_session_path, method: :delete  %></p>
-
-
+<div class="d-grid gap-2 d-md-flex ">
+<%= button_to "Log in", new_user_session_path, class:"btn btn-secondary btn-sm"  %>
+<%= button_to "Log out", destroy_user_session_path, method: :delete, class:"btn btn-secondary btn-sm"  %>
+</div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
