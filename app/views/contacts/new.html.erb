@@ -1,4 +1,8 @@
-<h1>Contact us</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="fs-4">
+<h3>Contact us</h3>
 
 <%= form_for :contact, url: contacts_path do |f| %>
 <% if @contact && @contact.errors.any? %>
@@ -11,17 +15,21 @@
 </p>
 <% end %>
   <p>
-    <%= f.label :email %><br />
+    <%= f.label :email, class:"fw-semibold" %><br />
     <%= f.text_field :email %>
   </p>
 
   <p>
-    <%= f.label :message %><br />
+    <%= f.label :message, class:"fw-semibold" %><br />
     <%= f.text_area :message %>
   </p>
 
   <p>
-    <%= f.submit 'Send message'%>
+    <%= f.submit 'Send message', class:"btn btn-outline-success"%>
   </p>
 
 <% end %>
+      </div>
+    </div>
+  </div>
+</div>

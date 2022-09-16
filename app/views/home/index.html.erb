@@ -1,2 +1,16 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="fs-4">
+        <h1>Main menu</h1>
+        <p><%= link_to 'About',  about_path(:about) %></p>
+        <p><%= link_to 'Information',  information_path(:information) %></p>
+        <p><%= link_to 'Terms',  terms_path(:show) %></p>
+        <p><%= link_to 'Contacts',  contacts_path(:new) %></p>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
