@@ -3,6 +3,8 @@
     <div class="col-xs-12">
       <div class="fs-4">
         <h1>Main menu</h1>
+        <p><%= link_to 'New article', article_path([:new]) %></p>
+        <p><%= link_to 'Show all articles!', articles_path %></p>
         <p><%= link_to 'About',  about_path(:about) %></p>
         <p><%= link_to 'Information',  information_path(:information) %></p>
         <p><%= link_to 'Terms',  terms_path(:show) %></p>
