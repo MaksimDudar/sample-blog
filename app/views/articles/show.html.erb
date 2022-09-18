@@ -1,26 +1,21 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <p><%= link_to 'Show all articles!', articles_path %></p>
+      <p><%= link_to 'Show all articles', articles_path %></p>
 
       <h1><%= @article.title %></h1>
       <p>
         <%= @article.text %>
       </p>
       <h5>All comments</h5>
-      <% @article.comments.each do |comment| %>
-        <p><i><%= comment.author %> said:</i><br/>
-          <%= comment.body %>
-          <% end %></p>
+        <% @article.comments.each do |comment| %>
+        <p><strong> <i><p><%= comment.author %>:</i></strong> <br/></p>
+          <%= comment.body %><hr/>
+          <% end %><hr/>
       <h5>Add comment</h5>
 
       <p>
         <%= form_for([@article, @article.comments.build]) do |f| %>
-          <p>
-            <%= f.label :author, class:"fw-semibold" %><br />
-            <%= f.text_field :author %>
-          </p>
-
           <p>
             <%= f.label :body, class:"fw-semibold" %><br />
             <%= f.text_area :body %>
