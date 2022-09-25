@@ -8,4 +8,12 @@ describe Article do
   describe "associations" do
     it { should have_many :comments }
   end
+
+
+describe "#subject" do
+  it "returns the article title" do
+    article = create(:article, title: 'maksim')
+    expect(article.subject).to eq 'maksim'
+    end
+  end
 end
