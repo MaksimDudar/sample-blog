@@ -75,4 +75,6 @@ gem "devise"
 gem "jquery-rails"
 gem "bootstrap"
 gem "sass-rails"
-
+group :development, :test do
+  gem 'rspec-rails'
+end
