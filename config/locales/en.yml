@@ -34,3 +34,14 @@ en:
 
   contacts:
     contact_us: "Contact US!"
+
+  layouts:
+    my_blog: "My BLOg"
+    about_us: "About US "
+    articles: "ARTicl(y)ES"
+    iformation: "INFORMATION"
+    terms: "Terms"
+    contacts: "Contacts"
+
+  articles:
+    articles: "LIST of ARTicleS"

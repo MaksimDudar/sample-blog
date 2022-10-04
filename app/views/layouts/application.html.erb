@@ -13,26 +13,26 @@
       <div class="row">
         <nav class="navbar navbar-dark navbar-expand-lg  bg-dark">
     <div class="container-fluid">
-    <a class="navbar-brand" href="/">My blog</a>
+    <a class="navbar-brand" href="/"><%= t("layouts.my_blog") %></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="col-md-10 navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+          <a class="nav-link active" aria-current="page" href="/about"><%= t("layouts.about_us") %></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/articles">Articles</a>
+          <a class="nav-link active" href="/articles"><%= t("layouts.articles") %></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/information">Information</a>
+          <a class="nav-link active" href="/information"><%= t("layouts.information") %></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/terms">Terms</a>
+          <a class="nav-link active" href="/terms"><%= t("layouts.terms") %></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/contacts">Contacts</a>
+          <a class="nav-link active" href="/contacts"><%= t("layouts.contacts") %></a>
         </li>
         <li class="col-md-6 d-grid gap-2 d-md-flex justify-content-md-end">
           <% if user_signed_in? %>
